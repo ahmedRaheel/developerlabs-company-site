@@ -1,0 +1,305 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ForgePDF AI Tutorial — DeveloperLabAI</title><meta name="description" content="ForgePDF AI tutorial and examples."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"><link href="../assets/css/styles.css" rel="stylesheet"><link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"></head><body><nav class="navbar navbar-expand-lg fixed-top navbar-dark"><div class="container"><a class="navbar-brand d-flex align-items-center gap-2" href="../index.html"><span class="brand-mark">DL</span><span>DeveloperLabAI</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link " href="../products.html">Products</a></li><li class="nav-item"><a class="nav-link " href="../pricing.html">Pricing</a></li><li class="nav-item"><a class="nav-link active" href="../docs.html">Docs</a></li><li class="nav-item"><a class="nav-link " href="../blog.html">Blog</a></li><li class="nav-item"><a class="nav-link " href="../about.html">About</a></li><li class="nav-item ms-lg-2"><a class="btn btn-sm btn-gradient rounded-pill px-3" href="../contact.html">Contact</a></li></ul></div></div></nav><main><section class="page-head"><div class="container"><p class="section-kicker">Tutorial / README</p><h1 class="section-title">ForgePDF AI Documentation</h1><p class="lead-xl">Copy-ready product tutorial generated from the uploaded README details.</p></div></section><section class="section pt-0"><div class="container"><div class="doc-shell"><aside class="glass doc-sidebar"><a href="../docs.html">← All Docs</a><a href="../products/forgepdf.html">Product Page</a><a href="../contact.html">Support</a><hr class="border-secondary"><a href="#top">Top</a></aside><article id="top" class="glass doc-content"><h2 class="doc-heading">ForgePDF AI</h2>
+<p class="doc-p">Enterprise-grade AI-powered PDF rendering and document conversion engine for .NET.</p>
+<p class="doc-p">ForgePDF AI supports:</p>
+<ul class="doc-list">
+<li>HTML to PDF</li>
+<li>HTML Parts to PDF</li>
+<li>Word (.docx) to PDF</li>
+<li>Excel (.xlsx) to PDF</li>
+<li>PowerPoint (.pptx) to PDF</li>
+<li>Multilingual rendering</li>
+<li>RTL language support</li>
+<li>Large file rendering</li>
+<li>Parallel rendering</li>
+<li>Streaming PDF generation</li>
+<li>Enterprise concurrency handling</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Features</h2>
+<h3 class="doc-heading">HTML to PDF</h3>
+<p class="doc-p">Supports:</p>
+<ul class="doc-list">
+<li>Full HTML documents</li>
+<li>Inline CSS</li>
+<li>External CSS</li>
+<li>HTML fragments</li>
+<li>Multiple HTML parts</li>
+<li>Headers and footers</li>
+<li>Title pages</li>
+<li>Logo pages</li>
+<li>Repeatable page headers</li>
+<li>Repeatable page footers</li>
+<li>Page numbering</li>
+</ul>
+<hr class="doc-sep">
+<h3 class="doc-heading">Word to PDF</h3>
+<p class="doc-p">Supports:</p>
+<ul class="doc-list">
+<li>DOCX parsing</li>
+<li>Headings</li>
+<li>Paragraphs</li>
+<li>Lists</li>
+<li>Bullets</li>
+<li>Numbering</li>
+<li>ATS resume conversion</li>
+<li>Multi-page rendering</li>
+</ul>
+<hr class="doc-sep">
+<h3 class="doc-heading">Excel to PDF</h3>
+<p class="doc-p">Supports:</p>
+<ul class="doc-list">
+<li>XLSX worksheets</li>
+<li>Auto-fit PDF tables</li>
+<li>Multi-page sheet rendering</li>
+<li>Header styling</li>
+<li>Table borders</li>
+<li>Large datasets</li>
+</ul>
+<hr class="doc-sep">
+<h3 class="doc-heading">PowerPoint to PDF</h3>
+<p class="doc-p">Supports:</p>
+<ul class="doc-list">
+<li>PPTX slides</li>
+<li>Slide titles</li>
+<li>Bullet points</li>
+<li>PowerPoint tables</li>
+<li>Styled slide rendering</li>
+<li>Professional slide layouts</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Enterprise Features</h2>
+<ul class="doc-list">
+<li>Multi-threaded rendering</li>
+<li>High concurrency support</li>
+<li>SemaphoreSlim coordination</li>
+<li>Queue management</li>
+<li>Streaming support</li>
+<li>Parallel page rendering</li>
+<li>Large document optimization</li>
+<li>Configurable chunking</li>
+<li>Configurable page size</li>
+<li>Configurable margins</li>
+<li>Auto font fallback</li>
+<li>RTL rendering</li>
+<li>Hybrid rendering mode</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Supported Languages</h2>
+<ul class="doc-list">
+<li>English</li>
+<li>Urdu</li>
+<li>Arabic</li>
+<li>Persian</li>
+<li>Turkish</li>
+<li>Hindi</li>
+<li>Unicode text</li>
+<li>RTL languages</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Solution Structure</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>txt</small><button class="copy-btn" type="button">Copy</button></div><pre><code>src/
+ ├── ForgePDF.Core
+ ├── ForgePDF.Threading
+ ├── ForgePDF.Localization
+ ├── ForgePDF.Html
+ ├── ForgePDF.RichHtml
+ ├── ForgePDF.Components
+ ├── ForgePDF.AspNetCore
+ ├── ForgePDF.Converters
+ ├── ForgePDF.AI
+ └── ForgePDF.Cli
+
+samples/
+ ├── Enterprise.MinimalApi
+ └── LargeReport.Concurrent
+
+tests/
+ └── ForgePDF.UnitTests</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Installation</h2>
+<h3 class="doc-heading">Clone</h3>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>git clone https://github.com/your-repo/ForgePDF.git
+cd ForgePDF</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Build</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet build</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Run Sample API</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet run --project samples/Enterprise.MinimalApi</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Minimal API Example</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>using ForgePDF.Core;
+using ForgePDF.Threading;
+using ForgePDF.AspNetCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddForgePdf(options =&gt;
+{
+    options.MaxConcurrentDocuments = Environment.ProcessorCount;
+    options.QueueTimeout = TimeSpan.FromSeconds(30);
+});
+
+var app = builder.Build();
+
+app.MapPost(&quot;/convert/html-to-pdf&quot;, async (
+    HtmlToPdfRequest request,
+    DocumentConversionService converter) =&gt;
+{
+    var result = await converter.ConvertHtmlAsync(request);
+
+    return Results.File(
+        result.Bytes,
+        &quot;application/pdf&quot;,
+        result.FileName);
+});
+
+app.Run();</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">HTML to PDF Example</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>var result = await converter.ConvertHtmlAsync(new HtmlToPdfRequest
+{
+    Html = &quot;&quot;&quot;
+    &lt;html&gt;
+        &lt;body&gt;
+            &lt;h1&gt;ForgePDF AI&lt;/h1&gt;
+            &lt;p&gt;Enterprise HTML to PDF rendering.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+    &quot;&quot;&quot;,
+    FileName = &quot;report.pdf&quot;
+});</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">HTML Parts Example</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>var result = await converter.ConvertHtmlPartsAsync(
+    new HtmlPartsToPdfRequest
+    {
+        HtmlParts =
+        [
+            &quot;&lt;h1&gt;Part 1&lt;/h1&gt;&quot;,
+            &quot;&lt;h2&gt;Part 2&lt;/h2&gt;&quot;
+        ],
+        CssParts =
+        [
+            &quot;body { font-family: Arial; }&quot;
+        ],
+        FileName = &quot;parts.pdf&quot;
+    });</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Word to PDF Example</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>var bytes = await File.ReadAllBytesAsync(&quot;resume.docx&quot;);
+
+var result = await converter.ConvertFileAsync(
+    new FileToPdfRequest
+    {
+        Kind = ForgeDocumentKind.WordDocx,
+        Base64File = Convert.ToBase64String(bytes),
+        OutputFileName = &quot;resume.pdf&quot;
+    });</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Excel to PDF Example</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>var bytes = await File.ReadAllBytesAsync(&quot;orders.xlsx&quot;);
+
+var result = await converter.ConvertFileAsync(
+    new FileToPdfRequest
+    {
+        Kind = ForgeDocumentKind.ExcelXlsx,
+        Base64File = Convert.ToBase64String(bytes),
+        OutputFileName = &quot;orders.pdf&quot;
+    });</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">PowerPoint to PDF Example</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>var bytes = await File.ReadAllBytesAsync(&quot;deck.pptx&quot;);
+
+var result = await converter.ConvertFileAsync(
+    new FileToPdfRequest
+    {
+        Kind = ForgeDocumentKind.PowerPointPptx,
+        Base64File = Convert.ToBase64String(bytes),
+        OutputFileName = &quot;deck.pdf&quot;
+    });</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">CLI Usage</h2>
+<h3 class="doc-heading">HTML</h3>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet run --project src/ForgePDF.Cli -- html report.html report.pdf</code></pre></div>
+<h3 class="doc-heading">DOCX</h3>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet run --project src/ForgePDF.Cli -- docx resume.docx resume.pdf</code></pre></div>
+<h3 class="doc-heading">XLSX</h3>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet run --project src/ForgePDF.Cli -- xlsx orders.xlsx orders.pdf</code></pre></div>
+<h3 class="doc-heading">PPTX</h3>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet run --project src/ForgePDF.Cli -- pptx slides.pptx slides.pdf</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Concurrency Configuration</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>builder.Services.AddForgePdf(options =&gt;
+{
+    options.MaxConcurrentDocuments = Environment.ProcessorCount;
+    options.QueueTimeout = TimeSpan.FromSeconds(20);
+});</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Large File Rendering</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>.UseHybridMode()
+.EnableStreaming()
+.EnableParallelLayout()
+.WithMaxDegreeOfParallelism(Environment.ProcessorCount)
+.WithPageChunkSize(50)</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Testing</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet test</code></pre></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Current Capabilities</h2>
+<div class="table-responsive"><table class="table table-dark table-hover align-middle doc-table"><tbody>
+<tr><td>Feature</td><td>Status</td></tr>
+<tr><td>HTML to PDF</td><td>Supported</td></tr>
+<tr><td>DOCX to PDF</td><td>Supported</td></tr>
+<tr><td>XLSX to PDF</td><td>Supported</td></tr>
+<tr><td>PPTX to PDF</td><td>Supported</td></tr>
+<tr><td>RTL Languages</td><td>Supported</td></tr>
+<tr><td>Parallel Rendering</td><td>Supported</td></tr>
+<tr><td>Streaming</td><td>Supported</td></tr>
+<tr><td>Headers/Footers</td><td>Supported</td></tr>
+<tr><td>Repeat Headers</td><td>Supported</td></tr>
+<tr><td>Repeat Footers</td><td>Supported</td></tr>
+<tr><td>Auto-fit Tables</td><td>Supported</td></tr>
+</tbody></table></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Future Roadmap</h2>
+<ul class="doc-list">
+<li>Chromium rendering engine</li>
+<li>Full CSS layout engine</li>
+<li>Native chart rendering</li>
+<li>SVG rendering</li>
+<li>Image rendering</li>
+<li>SmartArt rendering</li>
+<li>TrueType/OpenType font embedding</li>
+<li>Advanced Unicode shaping</li>
+<li>Pixel-perfect Office rendering</li>
+<li>GPU acceleration</li>
+<li>AI layout optimization</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Performance Goals</h2>
+<p class="doc-p">ForgePDF AI is designed to compete with enterprise-grade PDF engines through:</p>
+<ul class="doc-list">
+<li>High throughput rendering</li>
+<li>Low memory allocations</li>
+<li>Multi-threaded processing</li>
+<li>Efficient page chunking</li>
+<li>Large document optimization</li>
+<li>Async streaming pipelines</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Contributing</h2>
+<p class="doc-p">Contributions are welcome.</p>
+<p class="doc-p">1. Fork the repository</p>
+<p class="doc-p">2. Create your feature branch</p>
+<p class="doc-p">3. Commit your changes</p>
+<p class="doc-p">4. Push to the branch</p>
+<p class="doc-p">5. Open a Pull Request</p>
+<hr class="doc-sep">
+<h2 class="doc-heading">License</h2>
+<p class="doc-p">MIT License</p>
+<hr class="doc-sep">
+<h2 class="doc-heading">Author</h2>
+<p class="doc-p">Raheel Ahmed</p>
+<p class="doc-p">Solution Architect | Principal Software Architect</p>
+<p class="doc-p">ForgePDF AI - Enterprise Document Conversion Engine</p></article></div></div></section></main><footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-5"><div class="d-flex align-items-center gap-2 mb-3"><span class="brand-mark">DL</span><strong class="text-white fs-4">DeveloperLabAI</strong></div><p>State-of-the-art AI-powered developer tooling for .NET architects, backend engineers, SaaS teams and enterprise product builders.</p></div><div class="col-6 col-lg-2"><h6 class="text-white">Company</h6><a class="d-block text-reset mb-2" href="../about.html">About</a><a class="d-block text-reset mb-2" href="../services.html">Services</a><a class="d-block text-reset mb-2" href="../contact.html">Contact</a></div><div class="col-6 col-lg-2"><h6 class="text-white">Products</h6><a class="d-block text-reset mb-2" href="../products/onionforge.html">OnionForge</a><a class="d-block text-reset mb-2" href="../products/sliceforge.html">SliceForge</a><a class="d-block text-reset mb-2" href="../products/forgepdf.html">ForgePDF</a><a class="d-block text-reset mb-2" href="../products/forgeorm.html">ForgeORM</a></div><div class="col-lg-3"><h6 class="text-white">Founder</h6><p class="mb-1">Raheel Ahmed</p><p class="small mb-0">Solution Architect | Principal Software Architect</p></div></div><hr class="border-secondary my-4"><div class="d-flex flex-column flex-md-row justify-content-between gap-2"><small>© <span id="year"></span> DeveloperLabAI. All rights reserved.</small><small>developerlabai.com</small></div></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="../assets/js/main.js"></script></body></html>

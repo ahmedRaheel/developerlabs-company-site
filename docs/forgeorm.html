@@ -1,0 +1,151 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ForgeORM Tutorial — DeveloperLabAI</title><meta name="description" content="ForgeORM tutorial and examples."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"><link href="../assets/css/styles.css" rel="stylesheet"><link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"></head><body><nav class="navbar navbar-expand-lg fixed-top navbar-dark"><div class="container"><a class="navbar-brand d-flex align-items-center gap-2" href="../index.html"><span class="brand-mark">DL</span><span>DeveloperLabAI</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link " href="../products.html">Products</a></li><li class="nav-item"><a class="nav-link " href="../pricing.html">Pricing</a></li><li class="nav-item"><a class="nav-link active" href="../docs.html">Docs</a></li><li class="nav-item"><a class="nav-link " href="../blog.html">Blog</a></li><li class="nav-item"><a class="nav-link " href="../about.html">About</a></li><li class="nav-item ms-lg-2"><a class="btn btn-sm btn-gradient rounded-pill px-3" href="../contact.html">Contact</a></li></ul></div></div></nav><main><section class="page-head"><div class="container"><p class="section-kicker">Tutorial / README</p><h1 class="section-title">ForgeORM Documentation</h1><p class="lead-xl">Copy-ready product tutorial generated from the uploaded README details.</p></div></section><section class="section pt-0"><div class="container"><div class="doc-shell"><aside class="glass doc-sidebar"><a href="../docs.html">← All Docs</a><a href="../products/forgeorm.html">Product Page</a><a href="../contact.html">Support</a><hr class="border-secondary"><a href="#top">Top</a></aside><article id="top" class="glass doc-content"><h2 class="doc-heading">ForgeORM</h2>
+<p class="doc-p">High-performance next-generation .NET ORM combining the power of raw SQL, Dapper-level speed, EF Core-style developer experience, compile-time safety, dynamic query generation, schema artifacts, split-query relationship loading, and advanced database tooling.</p>
+<hr class="doc-sep">
+<h2 class="doc-heading">Vision</h2>
+<p class="doc-p">ForgeORM is designed to become:</p>
+<ul class="doc-list">
+<li>Faster than EF Core</li>
+<li>More developer friendly than Dapper</li>
+<li>SQL-first without losing type safety</li>
+<li>Database transparent</li>
+<li>IDE-aware</li>
+<li>Multi-database</li>
+<li>Enterprise-ready</li>
+<li>Cloud-native</li>
+<li>AI-assisted</li>
+<li>Compile-time optimized</li>
+</ul>
+<p class="doc-p">ForgeORM provides:</p>
+<ul class="doc-list">
+<li>Raw SQL execution</li>
+<li>Strongly typed query AST</li>
+<li>Dynamic query builder</li>
+<li>Stored procedures</li>
+<li>Functions</li>
+<li>Bulk operations</li>
+<li>Split query relationship loading</li>
+<li>Artifact management</li>
+<li>Query visualization</li>
+<li>Query analytics</li>
+<li>Smart pagination</li>
+<li>Optional filtering</li>
+<li>Dynamic search APIs</li>
+<li>Automatic schema history</li>
+<li>Future Roslyn + Source Generator support</li>
+</ul>
+<hr class="doc-sep">
+<h2 class="doc-heading">Supported Databases</h2>
+<div class="table-responsive"><table class="table table-dark table-hover align-middle doc-table"><tbody>
+<tr><td>Database</td><td>Support</td></tr>
+<tr><td>SQL Server</td><td>✅</td></tr>
+<tr><td>SQL Express</td><td>✅</td></tr>
+<tr><td>PostgreSQL</td><td>✅</td></tr>
+<tr><td>MySQL</td><td>✅</td></tr>
+<tr><td>Oracle</td><td>✅</td></tr>
+<tr><td>SQLite</td><td>✅</td></tr>
+</tbody></table></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Core Philosophy</h2>
+<p class="doc-p">ForgeORM supports ALL development styles:</p>
+<div class="table-responsive"><table class="table table-dark table-hover align-middle doc-table"><tbody>
+<tr><td>Style</td><td>Supported</td></tr>
+<tr><td>Raw SQL</td><td>✅</td></tr>
+<tr><td>Dapper-like</td><td>✅</td></tr>
+<tr><td>EF-like expressions</td><td>✅</td></tr>
+<tr><td>Dynamic query builder</td><td>✅</td></tr>
+<tr><td>AST query builder</td><td>✅</td></tr>
+<tr><td>Stored procedures</td><td>✅</td></tr>
+<tr><td>Functions</td><td>✅</td></tr>
+<tr><td>Views</td><td>✅</td></tr>
+<tr><td>Temp tables</td><td>✅</td></tr>
+<tr><td>CTEs</td><td>✅</td></tr>
+<tr><td>Split queries</td><td>✅</td></tr>
+<tr><td>Bulk operations</td><td>✅</td></tr>
+</tbody></table></div>
+<hr class="doc-sep">
+<h2 class="doc-heading">Installation</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>bash</small><button class="copy-btn" type="button">Copy</button></div><pre><code>dotnet add package ForgeORM.SqlServer
+dotnet add package ForgeORM.PostgreSql
+dotnet add package ForgeORM.MySql
+dotnet add package ForgeORM.Oracle
+
+
+# Configuration
+</code></pre></div>
+<p class="doc-p">{</p>
+<p class="doc-p">&quot;ConnectionStrings&quot;: {</p>
+<p class="doc-p">&quot;DefaultConnection&quot;: &quot;Data Source=&lt;DatabaseServer&gt;;Initial Catalog=ForgeOrmDb;Integrated Security=True;TrustServerCertificate=True;&quot;</p>
+<p class="doc-p">}</p>
+<p class="doc-p">}</p>
+<h2 class="doc-heading">Installation</h2>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>csharp</small><button class="copy-btn" type="button">Copy</button></div><pre><code>
+builder.Services.AddForgeOrm(options =&gt;
+{
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString(&quot;DefaultConnection&quot;));
+
+    options.EnableQueryLogging();
+    options.EnableQueryAnalytics();
+    options.EnableArtifactHistory();
+});
+
+
+Quick Start</code></pre></div>
+<p class="doc-p">var products = await db.QueryAsync&lt;Product&gt;(</p>
+<p class="doc-p">&quot;SELECT * FROM Products WHERE Price &gt; @Price&quot;,</p>
+<p class="doc-p">new { Price = 100 });</p>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>code</small><button class="copy-btn" type="button">Copy</button></div><pre><code>AST Query Builder</code></pre></div>
+<p class="doc-p">var query = ForgeSql</p>
+<p class="doc-p">.Select&lt;Product&gt;()</p>
+<p class="doc-p">.From(&quot;Products p&quot;)</p>
+<p class="doc-p">.LeftJoin&lt;Category&gt;((p, c) =&gt; p.CategoryId == c.Id)</p>
+<p class="doc-p">.Columns(</p>
+<p class="doc-p">&quot;p.Id&quot;,</p>
+<p class="doc-p">&quot;p.Name&quot;,</p>
+<p class="doc-p">&quot;p.Price&quot;,</p>
+<p class="doc-p">&quot;c.Name AS CategoryName&quot;)</p>
+<p class="doc-p">.Where(x =&gt; x.Price &gt; 100)</p>
+<p class="doc-p">.OrderByDescending(x =&gt; x.Id)</p>
+<p class="doc-p">.Take(20)</p>
+<p class="doc-p">.Render(db.ProviderName);</p>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>code</small><button class="copy-btn" type="button">Copy</button></div><pre><code>Universal Search API</code></pre></div>
+<p class="doc-p">var result = await db.Search&lt;Product&gt;()</p>
+<p class="doc-p">.Where(x =&gt; x.Price &gt;= minPrice)</p>
+<p class="doc-p">.WhereIf(categoryId != null,</p>
+<p class="doc-p">x =&gt; x.CategoryId == categoryId)</p>
+<p class="doc-p">.Page(page, pageSize)</p>
+<p class="doc-p">.ToPagedAsync();</p>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>code</small><button class="copy-btn" type="button">Copy</button></div><pre><code>Bulk Operations</code></pre></div>
+<p class="doc-p">await db.BulkInsertAsync(&quot;Products&quot;, rows);</p>
+<p class="doc-p">await db.BulkUpdateAsync(</p>
+<p class="doc-p">&quot;Products&quot;,</p>
+<p class="doc-p">rows,</p>
+<p class="doc-p">x =&gt; x.Id);</p>
+<p class="doc-p">await db.BulkDeleteAsync&lt;Product&gt;(</p>
+<p class="doc-p">x =&gt; ids.Contains(x.Id));</p>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>code</small><button class="copy-btn" type="button">Copy</button></div><pre><code>Split Query Loading</code></pre></div>
+<p class="doc-p">var customers = await db.SplitGraph&lt;Customer&gt;()</p>
+<p class="doc-p">.IncludeMany&lt;Order, int&gt;(</p>
+<p class="doc-p">ids =&gt; &quot;SELECT * FROM Orders WHERE CustomerId IN @Ids&quot;,</p>
+<p class="doc-p">c =&gt; c.Id,</p>
+<p class="doc-p">o =&gt; o.CustomerId,</p>
+<p class="doc-p">(c, orders) =&gt; c.Orders = orders.ToList())</p>
+<p class="doc-p">.ToListAsync(&quot;SELECT * FROM Customers&quot;);</p>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>code</small><button class="copy-btn" type="button">Copy</button></div><pre><code>Artifact System</code></pre></div>
+<p class="doc-p">var artifact = ForgeSql</p>
+<p class="doc-p">.Select&lt;Product&gt;()</p>
+<p class="doc-p">.From(&quot;Products&quot;)</p>
+<p class="doc-p">.AsView(&quot;vw_ProductList&quot;)</p>
+<p class="doc-p">.Render(db.ProviderName);</p>
+<div class="code-window"><div class="code-bar"><span></span><span></span><span></span><small>code</small><button class="copy-btn" type="button">Copy</button></div><pre><code>Swagger</code></pre></div>
+<p class="doc-p">https://localhost:5001/swagger</p>
+<pre><code>Philosophy
+ForgeORM is:
+SQL-first
+strongly typed
+performance-first
+transparent
+enterprise-grade
+future-ready
+Author
+Developed by Raheel Ahmed</code></pre></article></div></div></section></main><footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-5"><div class="d-flex align-items-center gap-2 mb-3"><span class="brand-mark">DL</span><strong class="text-white fs-4">DeveloperLabAI</strong></div><p>State-of-the-art AI-powered developer tooling for .NET architects, backend engineers, SaaS teams and enterprise product builders.</p></div><div class="col-6 col-lg-2"><h6 class="text-white">Company</h6><a class="d-block text-reset mb-2" href="../about.html">About</a><a class="d-block text-reset mb-2" href="../services.html">Services</a><a class="d-block text-reset mb-2" href="../contact.html">Contact</a></div><div class="col-6 col-lg-2"><h6 class="text-white">Products</h6><a class="d-block text-reset mb-2" href="../products/onionforge.html">OnionForge</a><a class="d-block text-reset mb-2" href="../products/sliceforge.html">SliceForge</a><a class="d-block text-reset mb-2" href="../products/forgepdf.html">ForgePDF</a><a class="d-block text-reset mb-2" href="../products/forgeorm.html">ForgeORM</a></div><div class="col-lg-3"><h6 class="text-white">Founder</h6><p class="mb-1">Raheel Ahmed</p><p class="small mb-0">Solution Architect | Principal Software Architect</p></div></div><hr class="border-secondary my-4"><div class="d-flex flex-column flex-md-row justify-content-between gap-2"><small>© <span id="year"></span> DeveloperLabAI. All rights reserved.</small><small>developerlabai.com</small></div></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="../assets/js/main.js"></script></body></html>
