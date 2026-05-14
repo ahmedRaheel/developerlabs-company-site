@@ -432,3 +432,6 @@ img{max-width:100%;display:block}
   .hero-metrics{grid-template-columns:1fr}
   .hero-actions{flex-direction:column}
 }
+
+.brand-logo img, .navbar-brand img { width: 56px; height: 56px; object-fit: cover; border-radius: 14px; }
+.hero-stack { display: inline-block; margin-top: 12px; font-size: 1.05rem; line-height: 1.6; color: rgba(255,255,255,.86); max-width: 900px; }

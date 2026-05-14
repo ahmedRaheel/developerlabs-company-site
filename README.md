@@ -1,4 +1,4 @@
-# DeveloperLabs.ai Orbital Premium Website
+# Fervidexs.ai Orbital Premium Website
 
 Creative Bootstrap static website with:
 - Smaller slim navbar
